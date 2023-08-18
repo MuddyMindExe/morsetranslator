@@ -58,3 +58,22 @@ Result:
 ```py
 TRY TO CONVERT
 ```
+**kmorse**
+```py
+def kmorse(text):
+    res = []
+    for l in text.split(' '):
+            for key, value in rusdict.items():
+                if value == l:
+                    if key != 'Ё':
+                        res.append(key)
+                    else:
+                        pass
+    return ''.join(res).strip()
+txt = '.--. --- .--. -.-- - -.- .-  .--. . .-. . .-- --- -.. .-'
+print(kmorse(txt))
+```
+Result:
+```py
+ПОПЫТКА ПЕРЕВОДА
+```
