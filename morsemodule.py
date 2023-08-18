@@ -48,5 +48,8 @@ def kmorse(text):
     for l in text.split(' '):
             for key, value in rusdict.items():
                 if value == l:
-                    res.append(key)
+                    if key != 'Ё':
+                        res.append(key)
+                    else:
+                        pass
     return ''.join(res).strip()
