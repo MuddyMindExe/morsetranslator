@@ -1,6 +1,7 @@
 # Task of the module
-Translates Latin and Cyrillic text into Morse code and vice versa
-
+Translates Latin and Cyrillic text into Morse code and vice versa.
+If you try to tanslate from morse code to text you will always get you text in upper case, beacuse morse code does not have the different codes for lower and upper case letters.
+If you want to translate only numbers or special symbols you may use all this functions, because dictionaries, that contain all the letters have all the special symbols.
 # Functions
 ```py
 def ltext(text):
